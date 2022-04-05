@@ -15,7 +15,6 @@ RUN npm install -g npm@8.5.5
 RUN npm install 
 RUN npm run build
 
-RUN npm run db:migrate
 
 EXPOSE 5001
 

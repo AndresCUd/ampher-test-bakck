@@ -4,8 +4,8 @@
     "description": "Back End test for ampher",
     "main": "index.js",
     "scripts": {
-        "lint": "prettier --write \"./src/**/*{.ts,.tsx,.js}\" && eslint --fix --ext .js,.jsx,.ts,.tsx src",
-        "lint:check": "prettier --check \"./src/**/*{.ts,.tsx,.js}\" && eslint --ext .js,.jsx,.ts,.tsx src",
+        "lint": "prettier --write \"./src/**/*{.ts,.tsx,.js}\" ",
+        "lint:check": "prettier --check \"./src/**/*{.ts,.tsx,.js}\" ",
         "build": "rimraf ./lib && tsc",
         "start": "ts-node-dev --respawn --transpile-only ./src/index.ts ",
         "start:pro": "rimraf ./lib && tsc && node ./lib/index.js"

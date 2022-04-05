@@ -1,8 +1,6 @@
-import modelGenerator from "../model-generator"
-import { EntriesAndres } from "./model"
+import modelGenerator from "../model-generator";
+import { EntriesAndres } from "./model";
 
+const entriesAndresModel = modelGenerator<EntriesAndres>("`entries_andres`");
 
-
-const entriesAndresModel = modelGenerator<EntriesAndres>('`entries_andres`')
-
-export default entriesAndresModel
+export default entriesAndresModel;
