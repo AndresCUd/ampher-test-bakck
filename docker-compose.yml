@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+    seti-server:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        platform: linux/amd64
+        volumes:
+            - .:/app
+        ports:
+            - 5001:5001

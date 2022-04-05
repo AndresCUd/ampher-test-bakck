@@ -1,0 +1,33 @@
+{
+    "name": "ampher-test-bakck",
+    "version": "1.0.0",
+    "description": "Back End test for ampher",
+    "main": "index.js",
+    "scripts": {
+        "lint": "prettier --write \"./src/**/*{.ts,.tsx,.js}\" && eslint --fix --ext .js,.jsx,.ts,.tsx src",
+        "lint:check": "prettier --check \"./src/**/*{.ts,.tsx,.js}\" && eslint --ext .js,.jsx,.ts,.tsx src",
+        "build": "rimraf ./lib && tsc",
+        "start": "ts-node-dev --respawn --transpile-only ./src/index.ts ",
+        "start:pro": "rimraf ./lib && tsc && node ./lib/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "express-validator": "^6.14.0",
+        "moment": "^2.29.2",
+        "mysql": "^2.18.1",
+        "swagger-express-ts": "^1.1.0",
+        "ts-node-dev": "^1.1.8",
+        "tsc": "^2.0.4",
+        "typescript": "^4.6.3"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/mysql": "^2.15.21",
+        "@types/node": "^17.0.23"
+    }
+}
